@@ -18,7 +18,7 @@ public class CustomerMapper {
 
     public ViewCustomerDTO toDTO(Customer customer){
 
-        ViewCustomerDTO viewCustomerDTO=new ViewCustomerDTO(customer.getName(),customer.getEmail(),customer.getPhoneNumber());
+        ViewCustomerDTO viewCustomerDTO=new ViewCustomerDTO(customer.getId().toString(),customer.getName(),customer.getEmail(),customer.getPhoneNumber());
 
         return viewCustomerDTO;
     }
